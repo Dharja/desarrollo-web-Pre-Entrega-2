@@ -1,0 +1,78 @@
+body{
+    background-color: #16161a;
+    font-family: proxima-nova, sans-serif;
+    color: #94a1b2;
+    font-size: 18px;
+    margin: 30px;
+
+}
+
+
+#titulo{
+    color: #fffffe;
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+}
+
+
+/*menú*/
+
+nav ul{
+    list-style: none;
+   display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+
+nav ul li a{
+    color: #94a1b2;
+    
+}
+
+
+/*contacto*/
+
+#contacto{
+background-color: #fffffe;
+text-align: center;
+}
+
+
+.lista__contacto{
+    color: #2cb67d;
+    list-style: none;
+}
+
+
+.texto__contacto{
+    color: #16161a;
+}
+
+
+#ig{
+    color: #2cb67d;
+}
+
+
+/*galería*/
+
+section{
+    margin: 50px;
+    border-radius: 8px;
+}
+
+/*sobre mi*/
+
+div{
+    color: #94a1b2;
+    font-size: small;
+    text-align:justify;
+
+}
