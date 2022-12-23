@@ -21,6 +21,7 @@ footer{
 
 /*menú*/
 
+
 nav ul{
     list-style: none;
    display: flex;
@@ -35,6 +36,18 @@ nav ul li a{
     color: #94a1b2;
     
 }
+
+
+/*sobre mi*/
+
+div{
+    color: #94a1b2;
+    font-size: small;
+    text-align:justify;
+
+}
+
+
 
 
 /*contacto*/
@@ -58,21 +71,4 @@ text-align: center;
 
 #ig{
     color: #2cb67d;
-}
-
-
-/*galería*/
-
-section{
-    margin: 50px;
-    border-radius: 8px;
-}
-
-/*sobre mi*/
-
-div{
-    color: #94a1b2;
-    font-size: small;
-    text-align:justify;
-
 }
