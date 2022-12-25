@@ -10,31 +10,31 @@
 <body>
 
     <!--header-->
-    <header>
+ <header id="contenedor">
 
-        <h1 id="titulo">Dharja <br> Guzmán</h1>
+    <h1 id="titulo">Dharja Guzmán</h1>
 
         <!--menú-->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="info.html">sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">productos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="product.html">productos</a>
-                        </li>
-                        <li class="nav-item">
+                    <li class="nav-item">
                             <a class="nav-link" href="galery.html">galería </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">contacto</a>
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="index.html">inicio</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
         
         
     </header>
@@ -42,7 +42,7 @@
     <section id="contacto">
 
 
-        <img src="assets/girl.png">
+        <img id="icon" src="assets/girl.png">
 <br>
         <p class="texto__contacto">
             ilustradora radicada en Argentina. <br>
@@ -63,10 +63,14 @@
 
         <form>
             <input type="text" class="texto" placeholder="tu nombre">
+            <br>
+            <br>
             <input type="text" class="texto" placeholder="tu mail">
-            <textarea name="tu mensaje" id="tu mensaje" cols="30" rows="5"></textarea>
+            <br>
+            <br>
+            <textarea name="tu mensaje" class="texto" cols="30" rows="5"></textarea>
         <br>
-            <button>enviar</button>
+            <button>Enviar</button>
         </form>
 
     </section>

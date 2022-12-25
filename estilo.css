@@ -1,21 +1,25 @@
 body{
-    background-color: #16161a;
+    background-color: #271c19;
     font-family: proxima-nova, sans-serif;
     color: #94a1b2;
     font-size: 18px;
-    margin: 30px;
+    margin: 40px;
 
 }
 
+/*header*/
 
-#titulo{
-    color: #fffffe;
-    text-align: center;
-}
+#contenedor{
+    color: #94a1b2;
+    text-align:left;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    
+    "titulo container-fluid"
 
-
-footer{
-    text-align: center;
+    ;
 }
 
 
@@ -24,51 +28,115 @@ footer{
 
 nav ul{
     list-style: none;
-   display: flex;
+    display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
+    font-size: 20px;
+    background-color: #94a1b2;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     
 }
 
 
 nav ul li a{
-    color: #94a1b2;
+    color: #140d0b;
     
 }
 
 
 /*sobre mi*/
 
-div{
+
+
+#parrafos{
     color: #94a1b2;
-    font-size: small;
+    font-size: 20px;
     text-align:justify;
+    padding-left: 20px;
 
 }
 
 
+.dibujos{
+    width: 300px;
+}
+
+.a{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
 
 /*contacto*/
 
 #contacto{
-background-color: #fffffe;
-text-align: center;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 
 .lista__contacto{
-    color: #2cb67d;
+    color:#271c19;
     list-style: none;
 }
 
 
 .texto__contacto{
-    color: #16161a;
+    color:#4e3121;
 }
 
 
 #ig{
-    color: #2cb67d;
+    color:#271c19;
 }
+
+
+#icon{
+    width: 300px ;
+}
+
+
+.texto{
+    border-radius: 28px;
+    border-color: #4e3121;
+    font-size: 16px;
+    padding: 9px 45px;
+}
+
+
+/*botón*/
+
+button{
+    font-size: 20px;
+    background-color: #55423d;
+	border-radius:28px;
+    border: none;
+	display:block;
+    position: relative;
+    width: 200px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+    text-align: center;
+	font-size:17px;
+	padding:10px 20px;
+	text-decoration:none;
+    margin: 0 auto;
+}
+
+
+/*footer*/
+
+footer{
+    padding-top: 50px;
+    text-align: center;
+}
+
