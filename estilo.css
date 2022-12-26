@@ -1,26 +1,39 @@
 body{
     background-color: #271c19;
-    font-family: proxima-nova, sans-serif;
     color: #fde6d9;
     font-size: 18px;
     margin: 40px;
-
+    font-family: 'Roboto Condensed', sans-serif;
 }
+
+
 
 /*header*/
 
+
 #contenedor{
-    color: #fde6d9;
-    text-align:left;
+    background-color: #ffc0ad;
+    border-radius: 20px;
+    padding-left: 20px;
+    text-align:center;
     display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
     grid-template-areas: 
     
-    "titulo container-fluid"
+    "titulo"
+    "container-fluid"
 
     ;
 }
+
+
+#titulo{
+    font-size: 40px;
+    color: #55423d;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 
 
 /*menú*/
@@ -32,28 +45,26 @@ nav ul{
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content:space-evenly;
-    font-size: 20px;
     background-color: #ffc0ad;
     border-radius: 8px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px;
     
 }
 
 
 nav ul li a{
     color: #140d0b;
-    
+    font-size: 25px;
 }
+
 
 
 /*sobre mi*/
 
 
-
 #parrafos{
-    color: #94a1b2;
-    font-size: 20px;
+    color: #fde6d9;
+    font-size: 25px;
     text-align:justify;
     padding-left: 20px;
 
@@ -64,35 +75,31 @@ nav ul li a{
     width: 300px;
 }
 
+
 .a{
+    background: linear-gradient(to right, #ffc0ad, #d28593);
+    border-radius: 10px;
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 20px;  
 }
 
-@media only screen and (min-width: 768px){
-.a{
+
+.dibujos{
     display: flex;
-    gap: 10px;
-    flex-direction: row;
     align-items: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 }
 
 
 /*contacto*/
 
 #contacto{
-    background: linear-gradient(to right, #fec7d7, #e78fb3, #9656a1 );
+    background: linear-gradient(to right, #ffc0ad, #d28593);
     text-align: center;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 20px;
 }
 
@@ -114,7 +121,7 @@ nav ul li a{
 
 
 #icon{
-    width: 300px ;
+    width: 150px ;
 }
 
 
@@ -162,3 +169,40 @@ footer{
     text-align: center;
 }
 
+
+
+
+/*responsive en "sobre mí"*/
+
+
+@media only screen and (min-width: 1024px){
+    .a{
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        align-items:stretch;
+        justify-content: space-around;
+        padding: 30px;
+    }
+
+
+    #contenedor{
+        background-color: #ffc0ad;
+        border-radius: 20px;
+        padding-left: 20px;
+        text-align:left;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        
+        "titulo container-fluid"
+    
+        ;
+    }
+
+
+    #icon{
+        width: 300px ;
+    }
+}
